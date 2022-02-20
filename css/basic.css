@@ -9,6 +9,9 @@ font-family: 'Roboto','Noto Sans KR', sans-serif;
 /*font-family: 'PT Serif', serif;*/
 min-width: 1200px;
 }
+html {
+    overflow-x:hidden;
+}
 
 *{box-sizing: border-box;}
 a {color:inherit;}
@@ -45,19 +48,51 @@ a {color:inherit;}
     border-left:1px solid rgba(202, 202, 202, 0.3);
 }
 
-.ball {
-    display: block;
+.screen01.swiper-slide-active .ball, .screen02.swiper-slide-active .ball {
     content: '';
     position:absolute;
     z-index:-1;
     width:185px;
     height:185px;
+    opacity:0;
     background: #1FD15F;
     border-radius:50%;
     transform-origin: 50% 50%;
-    animation:ball 5s ease-in-out infinite ;}
+    offset:path("M127.326,208.519c9.227,33.215,161.922,352.071,297.093,411.5S828.076,388.977,1042.13,405.585c201.854,15.661,160.85,174.083,404.608,103.9,14.779-4.255,30.557-9.333,47.491-15.329");
+    animation:offset 5s ease-in-out forwards;
+}
 
-@keyframes ball {
+.screen02.swiper-slide-active .ball {
+    top:0;
+    left:0;
+    }
+
+@keyframes offset {
+    0% {
+        offset-distance:0%;
+        transform: scale(1);
+    }
+    20%{opacity:0;}
+    40% {
+        opacity:1;
+        transform: scale(0.7);
+    } 
+    70% {
+        transform: scale(1.1);
+    }
+    92%{
+        transform: scale(0.8);
+    }
+    97%{
+        transform: scale(1.1);
+    }
+    100% {
+        opacity:1;
+        transform: scale(1);
+        offset-distance:100%
+    }
+}
+/*@keyframes ball {
     0% {
         transform: scale(1);
         transform:translate(0px,0px);
@@ -74,7 +109,7 @@ a {color:inherit;}
     100% {
         transform: scale(1);
     }
-}
+}*/
 
 .full-screen {
 display: block;
@@ -362,7 +397,7 @@ overflow: hidden;
     width:240px;
     height:100%;
     transition:.5s; 
-    border-top:2px solid #1FD15F;
+    border-top:1px solid #1FD15F;
 }
 .work_btn a {
     display:block;
@@ -373,7 +408,7 @@ overflow: hidden;
     font-weight:400;
     transition:0.5s;
     padding:20px;
-    background:rgba(9, 105, 49, 0.1);
+    background:rgba(73, 73, 73, 0.1);
 }
 
 .work_btn a::after{
@@ -588,6 +623,24 @@ overflow: hidden;
     background: #1FD15F;
     border-radius:50%;
     transform-origin: 50% 50%;
-    animation:ball 5s ease-in-out infinite ;
+    animation:ballTop 5s ease-in-out infinite ;
 }
 
+@keyframes ballTop {
+    0% {
+        transform: scale(1);
+        transform:translate(0px,0px);
+        transform:rotate(0deg);
+    }
+    40% {
+        transform:translate(0px,-10px);
+        transform: scale(0.8)
+    }
+    80% {
+        transform: scale(1.4);
+        transform:translate(-40px,40px);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

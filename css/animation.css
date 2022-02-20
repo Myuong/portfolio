@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
 /*about1*/
-.screen01.swiper-slide-active .co-1  {
+.screen01.swiper-slide-active {
     animation:all;
-    animation-duration: 3s;
-
+    animation-duration:2s
 }
 
-.screen01.swiper-slide-active .bg-line1 {
+/*.screen01.swiper-slide-active .bg-line1 {
     animation:line_upDown;
     animation-duration: 1s;
     animation-delay:1s;
@@ -17,37 +16,69 @@
     animation-duration: 1s;
     animation-delay:0.5s;
     animation-fill-mode: backwards;
-}
+}*/
 
 .screen01.swiper-slide-active .ab_title {
     opacity:0;
     animation:fadeInUp30;
-    animation-duration: 0.5s;
-    animation-delay:1s;
-    animation-fill-mode: forwards
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 .screen01.swiper-slide-active .ab_sub_title {
+    opacity:30%;
     animation:opac;
-    animation-duration: 1.5s;
-    animation-delay:1s;
-    animation-fill-mode: backwards;
+    animation-duration: 0.5s;
+    animation-delay:1.2s;
+    animation-fill-mode: forwards;
 }
 .screen01.swiper-slide-active .ab_sub_title2 {
-    animation:opac2;
-    animation-duration: 1.5s;
-    animation-delay:1s;
-    animation-fill-mode: backwards;
+    opacity:30%;
+    animation:opac;
+    animation-duration: 0.5s;
+    animation-delay:2.5s;
+    animation-fill-mode:forwards;
 }
-.screen01.swiper-slide-active .ball {
-    
-}
-
-
 /*about2*/
-.screen02.swiper-slide-active .bg-line1 {
-
+.screen02.swiper-slide-active{
+    animation:all;
+    animation-duration:2s
 }
 
+.screen02.swiper-slide-active .st_title {
+    opacity:0;
+    animation:fadeInUp30;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.screen02.swiper-slide-active .st_sub_title {
+    opacity:0;
+    animation:fadeInRight100;
+    animation-duration: 1s;
+    animation-delay:0.5s;
+    animation-fill-mode: forwards;
+}
+.screen02.swiper-slide-active .pro_wrap{
+    opacity:0%;
+    animation:all;
+    animation-duration:1s;
+    animation-delay:1.5s;
+    animation-fill-mode: forwards;
+}
+.screen02.swiper-slide-active .pro_wrap_bt {
+    opacity:0%;
+    animation:all;
+    animation-duration:1s;
+    animation-delay:2s;
+    animation-fill-mode: forwards;
+}
+.screen03.swiper-slide-active .bg_img img,
+.screen04.swiper-slide-active .bg_img img,
+.screen05.swiper-slide-active .bg_img img {
+    animation:zoom;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
+}
 
 
 @keyframes line_upDown{
@@ -60,24 +91,24 @@
     100% {width:100%;}
 }
 @keyframes opac {
-    0% {opacity:0;}
-    30% {opacity:20%;}
-    50% {opacity:20%;}
-    100% {opacity:100%;}
-}
-
-@keyframes opac2 {
-    0% {opacity:0;}
-    30% {opacity:20%;}
-    70% {opacity:20%;}
+    0% {opacity:30%;}
     100% {opacity:100%;}
 }
 
 @keyframes all {
     0% {
-        opacity:0;
+        opacity:0%;
     }
     100% {
         opacity:100%;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform:scale(1.2);
+    }
+    100% {
+        transform:scale(1);
     }
 }
