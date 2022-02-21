@@ -43,16 +43,12 @@ $(function(){
 
     //nav arrow_top 클릭시 위로
     $('.arrow_top').click(function(){
-        $('html').animate({scrollTop : 0})
+        $('html,body').animate({scrollTop : 0})
     })
 });
 
-//contact email animation
-$(function(){
-    $('.con_title').on('mouseenter',function(){
-        $('.con_me').animate({bottom:10, fontSize:"38px"},200,'swing');
-    })
-    .on('mouseleave',function(){
-        $('.con_me').animate({bottom:0, fontSize:"32px"},200,'swing');
-    });
-});
+//모바일 창 오픈시
+
+function winOpen(){
+    window.open('https://myuong.github.io/portfolioSite_BIFAN_mobile_renewal/','popup','width=500,height=960');
+}
