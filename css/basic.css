@@ -303,6 +303,8 @@ overflow: hidden;
     color:#000000;
     max-width:480px;
     font-weight:300;
+    line-height:1.6;
+    letter-spacing:-0.8px;
 }
 
 .bottom_left {
@@ -390,6 +392,7 @@ overflow: hidden;
 .work_sub_desc {
     width:375px;    
     text-align:left;
+    line-height:1.4;
 }
 
 .work_btn {
