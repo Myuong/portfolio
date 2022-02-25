@@ -174,7 +174,7 @@ overflow: hidden;
 }
 
 .swiper-container .swiper-pagination-bullet span {
-    size:17px;
+    font-size:17px;
     font-weight:700;
     transition:.5s;
 }
@@ -189,7 +189,7 @@ overflow: hidden;
     top:20px;
     right:350px;
     z-index:11;
-    size:17px;
+    font-size:17px;
     font-weight:700;
     transition:.3s;
 }
@@ -455,7 +455,7 @@ overflow: hidden;
     height:100%;
     width:100%;
     z-index:1;
-    background:rgba(0 0 0 / 0.2);
+    background:rgba(0, 0, 0, 0.2 );
 }
 .bg_img {
     position: absolute;
