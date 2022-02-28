@@ -118,9 +118,10 @@ overflow: hidden;
 }
 
 .arrow {
-    bottom:47%; right:320px;
-    transform:translateX(-50%);
     position: absolute;
+    top:480px; 
+    left:50%;
+    margin-left:460px;
     display:inline-block;
     font-family:'PT Serif', serif;
     font-size:17px;
@@ -136,9 +137,10 @@ overflow: hidden;
 }
 
 .arrow_w {
-    bottom:59%; right:320px;
-    transform:translateX(-50%);
     position: absolute;
+    top:370px; 
+    left:50%;
+    margin-left:460px;
     display:inline-block;
     font-family:'PT Serif', serif;
     font-size:17px;
@@ -158,11 +160,10 @@ overflow: hidden;
 /* nav */
 .swiper-container .swiper-pagination {
     position:fixed;
-    top: 20px;
-    left:calc(50% - 425px); 
-    transform:translateX(-50%);
-    text-align:right;
-    min-width:1200px;
+    top:20px;
+    left:50%;
+    margin-left:320px;
+    width:200px;
     height:60px;
 }
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -170,28 +171,30 @@ overflow: hidden;
     background:transparent;
     width:auto;
     height:auto;
-    margin:0 20px;
+    display:inline-block;
+    margin:0 10px;
 }
 
 .swiper-container .swiper-pagination-bullet span {
     font-size:17px;
     font-weight:700;
-    transition:.5s;
+    transition:.3s;
 }
 .swiper-container .swiper-pagination-bullet span:hover {color:#1FD15F;}
-.swiper-pagination-bullet:nth-of-type(2),
-.swiper-pagination-bullet:nth-of-type(4), 
-.swiper-pagination-bullet:nth-of-type(5), 
-.swiper-pagination-bullet:nth-of-type(6) {display:none;}
+.swiper-pagination-bullet:nth-of-type(2) span,
+.swiper-pagination-bullet:nth-of-type(4) span, 
+.swiper-pagination-bullet:nth-of-type(5) span, 
+.swiper-pagination-bullet:nth-of-type(6) span {display:none;}
 
 .pagination3 {
     position:fixed;
+    left:50%; 
+    margin-left:539px;
     top:20px;
-    right:350px;
-    z-index:11;
     font-size:17px;
     font-weight:700;
     transition:.3s;
+    z-index: 11;
 }
 .pagination3:hover {color:#1FD15F;}
 
@@ -223,7 +226,7 @@ overflow: hidden;
     height:460px
 }
 .about_bt {
-    position:relative;
+    position: relative;
     width:100%;
     height:477px;
     border-top:1px solid rgba(202, 202, 202, 0.3);
